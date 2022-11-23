@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H2>This is the form tutorial</H2>
+    <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url -->
+    <form action="backend.php">
+        <!-- here we are learning to take input from user ,the name which we are giving in name attribute will be called by the same name in backend so basically this name is for backend-->
+        name <input type="text" name="myname">
+        <br>
+        <br>
+
+        <!-- what label tag does is , when we click directly on role text in webpage then it will take directly us to the input box  -->
+
+        <div>
+            <label for="my role">
+                Role
+            </label>
+            <input type="text" name="myrole" id="my role">
+        </div><br>
+        <div>Email
+            <input type="Email" name="myemail">
+        </div><br>
+        <div>Date:
+            <input type="Date" name="mydate">
+        </div><br>
+        <div>Bonus
+            <input type="number" name="myno.">
+        </div><br>
+
+        <!-- This tag provides with textbox -->
+        <div>
+            <textarea name="my remark" cols="30" rows="10">
+                please provide with your remark
+                </textarea>
+        </div>
+
+
+        <div>Are you eligible
+            <input type="checkbox" name="checkbox" checked>
+        </div><br>
+
+
+        <div>
+            <label for="cars"> Cars</label>
+            <select name="mycars" id="cars">
+                <option value="ind">
+                    Indica
+                </option>
+                <option value="swf" selected><!--selected attribute makes particular attribute selected by default-->
+                    Swift
+                </option>
+
+            </select>
+        </div>
+
+        <!-- In radio type input what we have done is we have kept their all name attributes to be same so tha only one at a time checkbox should be checked -->
+        <div>Gender:male
+            <input type="radio" name="mygender."> Female<input type="radio" name="mygender."> Others<input type="radio"
+                name="mygender.">
+        </div><br>
+
+        <!-- This is a button that connects you to the backend -->
+        <div>
+            <input type="submit" value="submitnow">
+        </div><br>
+        <div>
+            <input type="reset" value="resetnow">
+        </div>
+
+    </form>
+
+    <!-- To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.
+    and a placeholder tag is also used to give text inside the box in a opaque manner -->
+
+</body>
+
+</html>
